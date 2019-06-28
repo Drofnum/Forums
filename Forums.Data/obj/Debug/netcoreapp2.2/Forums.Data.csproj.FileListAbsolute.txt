@@ -1,0 +1,10 @@
+C:\Users\echao\source\repos\Forums\Forums.Data\bin\Debug\netcoreapp2.2\Forums.Data.deps.json
+C:\Users\echao\source\repos\Forums\Forums.Data\bin\Debug\netcoreapp2.2\Forums.Data.runtimeconfig.json
+C:\Users\echao\source\repos\Forums\Forums.Data\bin\Debug\netcoreapp2.2\Forums.Data.runtimeconfig.dev.json
+C:\Users\echao\source\repos\Forums\Forums.Data\bin\Debug\netcoreapp2.2\Forums.Data.dll
+C:\Users\echao\source\repos\Forums\Forums.Data\bin\Debug\netcoreapp2.2\Forums.Data.pdb
+C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.csproj.CoreCompileInputs.cache
+C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.AssemblyInfoInputs.cache
+C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.AssemblyInfo.cs
+C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.dll
+C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.pdb

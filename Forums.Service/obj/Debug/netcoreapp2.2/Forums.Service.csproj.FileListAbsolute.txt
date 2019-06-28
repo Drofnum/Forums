@@ -1,0 +1,12 @@
+C:\Users\echao\source\repos\Forums\Forums.Service\bin\Debug\netcoreapp2.2\Forums.Service.deps.json
+C:\Users\echao\source\repos\Forums\Forums.Service\bin\Debug\netcoreapp2.2\Forums.Service.dll
+C:\Users\echao\source\repos\Forums\Forums.Service\bin\Debug\netcoreapp2.2\Forums.Service.pdb
+C:\Users\echao\source\repos\Forums\Forums.Service\bin\Debug\netcoreapp2.2\Forums.Data.dll
+C:\Users\echao\source\repos\Forums\Forums.Service\bin\Debug\netcoreapp2.2\Forums.Data.pdb
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.csprojAssemblyReference.cache
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.csproj.CoreCompileInputs.cache
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.AssemblyInfoInputs.cache
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.AssemblyInfo.cs
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.csproj.CopyComplete
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.dll
+C:\Users\echao\source\repos\Forums\Forums.Service\obj\Debug\netcoreapp2.2\Forums.Service.pdb
