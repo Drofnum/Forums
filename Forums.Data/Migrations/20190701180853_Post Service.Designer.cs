@@ -4,14 +4,16 @@ using Forums.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Forums.Data.Migrations
 {
     [DbContext(typeof(ForumsDbContext))]
-    partial class ForumsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190701180853_Post Service")]
+    partial class PostService
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
