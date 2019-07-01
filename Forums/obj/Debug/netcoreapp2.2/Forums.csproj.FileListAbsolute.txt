@@ -68,3 +68,4 @@ C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Forums.dll
 C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Forums.pdb
 C:\Users\echao\source\repos\Forums\Forums\bin\Debug\netcoreapp2.2\Forums.Service.dll
 C:\Users\echao\source\repos\Forums\Forums\bin\Debug\netcoreapp2.2\Forums.Service.pdb
+C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Razor\Views\Forum\Topic.g.cshtml.cs
