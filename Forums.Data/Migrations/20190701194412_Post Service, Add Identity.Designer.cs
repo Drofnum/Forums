@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Forums.Data.Migrations
 {
     [DbContext(typeof(ForumsDbContext))]
-    [Migration("20190701180853_Post Service")]
-    partial class PostService
+    [Migration("20190701194412_Post Service, Add Identity")]
+    partial class PostServiceAddIdentity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -8,4 +8,3 @@ C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Da
 C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.AssemblyInfo.cs
 C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.dll
 C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.pdb
-C:\Users\echao\source\repos\Forums\Forums.Data\obj\Debug\netcoreapp2.2\Forums.Data.csprojAssemblyReference.cache
