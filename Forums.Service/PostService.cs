@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Forums.Service
@@ -35,11 +34,6 @@ namespace Forums.Service
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IPost> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
         public Post GetById(int id)
         {
             return _context.Posts.Where(post => post.Id == id)
@@ -55,14 +49,25 @@ namespace Forums.Service
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Post> GetLatestPosts(int n)
+        {
+            var allPosts = GetAll().OrderByDescending(post => post.Created);
+            return allPosts.Take(n);
+        }
+
         public IEnumerable<Post> GetPostsByForum(int id)
         {
             return _context.Forums.Where(forum => forum.Id == id).First().Posts;
         }
 
-        IEnumerable<Post> IPost.GetAll()
+        public IEnumerable<Post> GetAll()
         {
-            throw new NotImplementedException();
+            var posts = _context.Posts
+                .Include(post => post.Forum)
+                .Include(post => post.User)
+                .Include(post => post.Replies)
+                .ThenInclude(reply => reply.User);
+            return posts;
         }
 
         IEnumerable<Post> IPost.GetFilteredPosts(string searchQuery)

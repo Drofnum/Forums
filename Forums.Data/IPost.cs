@@ -1,7 +1,5 @@
 ﻿using Forums.Data.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Forums.Data
@@ -12,10 +10,11 @@ namespace Forums.Data
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string searchQuery);
         IEnumerable<Post> GetPostsByForum(int id);
+        IEnumerable<Post> GetLatestPosts(int n);
 
         Task Add(Post post);
         Task Delete(int Id);
         Task EditPostContent(int Id, string newContent);
-       
+        
     }
 }
