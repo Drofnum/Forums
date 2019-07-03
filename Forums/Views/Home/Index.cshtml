@@ -3,8 +3,8 @@
 <div class="containter body-content">
     <div class="row frontPageSplash">
         <div class="col-md-6 frontPageLearn">
-            <div class="frontPageHeading">Sweet heading here</div>
-            <p class="frontPageSubHeading">Awesome subheading here</p>
+            <div class="frontPageHeading">Sweet heading here.  Needs more text than I had before.</div>
+            <p class="frontPageSubHeading">Awesome subheading here.  This one also needed more text.</p>
             <div>
                 <form asp-controller="Search" asp-action="Search" method="post">
                     <input asp-for="SearchQuery" type="text" class="homeSearch" placeholder="Search..." />
@@ -21,7 +21,7 @@
                 {
                     <tr>
                         <td>
-                            <div class="forumLogo" style="background-image: url(@post.Forum.ImageUrl); background-size=100%"></div>
+                            <div class="forumLogo" style="background-image: url(@post.Forum.ImageUrl);"></div>
                             <div class="postTitle">
                                 <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">
                                     @post.Title
