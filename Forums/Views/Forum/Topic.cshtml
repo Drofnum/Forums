@@ -14,7 +14,7 @@
             <form asp-controller="Forum" asp-action="Search" method="post">
                 <div class="searchForm">
                     <input asp-for="SearchQuery" type="text" placeholder="Search..." class="searchBar" onfocus="clearThis(this)" />
-                    <button type="submit" class="btn buttonSearch">
+                    <button type="submit" class="btn button-forumSearch">
                         <i class="material-icons">search</i>
                     </button>
                 </div>
@@ -23,10 +23,11 @@
         </div>
         <div class="sectionDescription">
             <div class="forumLogo" style="background-image: url(@Model.Forum.ImageUrl"></div>
-            <p>Welcome to the @Model.Forum.Name forum.</p>
-            @if (!User.Identity.IsAuthenticated)
-            {
-                <p>
+            <p>Welcome to the <strong>@Model.Forum.Name</strong> forum.</p>
+            <p>
+                @if (!User.Identity.IsAuthenticated)
+                {
+
                     <span>
                         You must be a
                         <a asp-area="Identity" asp-page="/Account/Register">
@@ -34,16 +35,17 @@
                         </a>
                         to create a new post.
                     </span>
-                </p>
-            }
+
+                }
+            </p>
         </div>
     </div>
     <div class="row forumIndexContent">
-        @if(Model.Posts.Any())
+        @if (Model.Posts.Any())
         {
             <table class="table table-hover table-bordered" id="forumIndexTable">
                 <tbody>
-                    @foreach(var post in Model.Posts)
+                    @foreach (var post in Model.Posts)
                     {
                         <tr>
                             <td>
@@ -76,13 +78,13 @@
                 </tbody>
             </table>
         }
-        else 
+        else
         {
             <div class="noPosts">
                 <i class="material-icons md-72">question_answer</i>
                 <h3>
                     It looks like there are no posts to be found.
-                    Why not 
+                    Why not
                     <a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id">
                         <span>Post</span>
                     </a>
