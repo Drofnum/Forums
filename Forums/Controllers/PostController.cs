@@ -34,17 +34,22 @@ namespace Forums.Controllers
             {
                 Id = post.Id,
                 Title = post.Title,
-                AuthorId = post.User.UserName,
+                AuthorId = post.User.Id,
+                AuthorName = post.User.UserName,
                 AuthorImageUrl = post.User.ProfileImageUrl,
                 AuthorRating = post.User.Rating,
                 Created = post.Created,
                 PostContent = post.Content,
-                Replies = replies
+                Replies = replies,
+                ForumId = post.Forum.Id,
+                ForumName = post.Forum.Title,
+                IsAuthorAdmin = IsAuthorAdmin(post.User)
 
             };
 
             return View(model);
         }
+
 
         public IActionResult Create(int id)
         {
@@ -99,8 +104,17 @@ namespace Forums.Controllers
                 AuthorName = reply.User.UserName,
                 AuthorImageUrl = reply.User.ProfileImageUrl,
                 Created = reply.Created,
-                ReplyContent = reply.Content
+                ReplyContent = reply.Content,
+                IsAuthorAdmin = IsAuthorAdmin(reply.User)
+           
             });
         }
+
+        private bool IsAuthorAdmin(ApplicationUser user)
+        {
+            return _userManager.GetRolesAsync(user)
+                .Result.Contains("Admin");
+        }
+
     }
 }
