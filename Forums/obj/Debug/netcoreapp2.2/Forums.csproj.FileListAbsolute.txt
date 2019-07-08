@@ -71,3 +71,4 @@ C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Forums.Views.p
 C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Forums.csproj.CopyComplete
 C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Forums.dll
 C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Forums.pdb
+C:\Users\echao\source\repos\Forums\Forums\obj\Debug\netcoreapp2.2\Razor\Views\Search\Results.g.cshtml.cs

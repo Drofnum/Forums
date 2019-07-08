@@ -53,6 +53,13 @@ namespace Forums.Service
                 || post.Content.Contains(searchQuery));
         }
 
+        public IEnumerable<Post> GetFilteredPosts(string searchQuery)
+        {
+            return GetAll().Where(post
+                => post.Title.Contains(searchQuery)
+                || post.Content.Contains(searchQuery));
+        }
+
         public IEnumerable<Post> GetLatestPosts(int n)
         {
             var allPosts = GetAll().OrderByDescending(post => post.Created);
@@ -73,5 +80,7 @@ namespace Forums.Service
                 .ThenInclude(reply => reply.User);
             return posts;
         }
+
+
     }
 }
